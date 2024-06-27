@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><title>Hello, World!</title><script>window.onload = function(){
+  let clicks = [].slice.call(document.getElementsByClassName("main_list"));
+  let menu = [].slice.call(document.getElementsByClassName("main_menu"));
+  console.log(clicks, menu);
+  for (var i = 0, len = clicks.length; i < len; i++)
+  (function (index) {
+    clicks[i].onclick = function () {
+      menu.map((m, i) => {
+        if (i === index) {
+          m.classList.toggle("show");
+        } else {
+          m.classList.remove("show");
+        }
+      });
+    };
+  })(i);
+}</script></head><body><aside id="left"><nav><ul class="erp__menu"><li class="main_menu"><a class="main_list">Analytics</a></li></ul></nav></aside></body></html>
