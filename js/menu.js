@@ -1,6 +1,8 @@
 window.onload = function () {
-  let clicks = [].slice.call(document.getElementsByClassName("main_list"));
-  let menu = [].slice.call(document.getElementsByClassName("main_menu"));
+  let clicks = [].slice.call(
+    document.getElementsByClassName("menu__main-list")
+  );
+  let menu = [].slice.call(document.getElementsByClassName("menu__main"));
   console.log(clicks, menu);
   for (var i = 0, len = clicks.length; i < len; i++)
     (function (index) {
