@@ -2,11 +2,187 @@ doctype html
 html(lang='en')
  head
     title Crm
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src='/js/menu.js')
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+
     link(rel='stylesheet' href='/css/app.css')
  body
-    aside#left
-      nav
-        ul.menu
-          li.menu__main
-            a(href="#", title="Analytics22").menu__main-list Analytics
+    header
+        div.header
+            div.menu-burger#menu-burger
+                img(src='img/ico/menu-burger.svg' alt='menu-burger').burger.toggle-menu
+                img(src='img/ico/menu-close.svg' alt='menu-close').close.toggle-menu
+            div.crm__menu-logo
+                    img(src='img/ico/setting.svg' alt='setting')
+                    p Dashboard
+                        span v.01
+            div.menu-right
+    div.crm
+        aside.crm__menu#crm__menu
+            nav
+                div.crm__menu-logo
+                    img(src='img/ico/setting.svg' alt='setting')
+                    p Dashboard
+                        span v.01
+                ul
+                    li.crm__menu-list.one
+                        a(href="#", title="Analytics22").crm__menu-link
+                            img(src='img/ico/dashboard.svg' alt='dashboard')
+                            span Dashboard
+                    li.crm__menu-list
+                        a(href="#", title="Analytics22").crm__menu-link
+                            img(src='img/ico/product.svg' alt='product')
+                            span Product
+                        ul.crm__menu-sub
+                            li
+                                a(href="#", title="Analytics22") Product 1
+                            li
+                                a(href="#", title="Analytics22") Product 2
+                            li
+                                a(href="#", title="Analytics22") Product 3
+                    li.crm__menu-list.show.active
+                        a(href="#", title="Analytics22").crm__menu-link
+                            img(src='img/ico/customer.svg' alt='customer')
+                            span Customers
+                        ul.crm__menu-sub
+                            li
+                                a(href="#", title="Analytics22").active Customers 1
+                            li
+                                a(href="#", title="Analytics22") Customers 2
+                            li
+                                a(href="#", title="Analytics22") Customers 3
+                    li.crm__menu-list
+                        a(href="#", title="Analytics22").crm__menu-link
+                            img(src='img/ico/income.svg' alt='income')
+                            span Income
+                        ul.crm__menu-sub
+                            li
+                                a(href="#", title="Analytics22").active Income 1
+                            li
+                                a(href="#", title="Analytics22") Income 2
+                            li
+                                a(href="#", title="Analytics22") Income 3
+                    li.crm__menu-list
+                        a(href="#", title="Analytics22").crm__menu-link
+                            img(src='img/ico/promote.svg' alt='promote')
+                            span Promote
+                        ul.crm__menu-sub
+                            li
+                                a(href="#", title="Analytics22").active Promote 1
+                            li
+                                a(href="#", title="Analytics22") Promote 2
+                            li
+                                a(href="#", title="Analytics22") Promote 3
+                    li.crm__menu-list
+                        a(href="#", title="Analytics22").crm__menu-link
+                            img(src='img/ico/help.svg' alt='help')
+                            span Help
+                        ul.crm__menu-sub
+                            li
+                                a(href="#", title="Analytics22").active Help 1
+                            li
+                                a(href="#", title="Analytics22") Help 2
+                            li
+                                a(href="#", title="Analytics22") Help 3
+            div.crm__user
+                img(src='img/avatar.png' alt='avatar')
+                div
+                    p Evano
+                    span Project Manager
+        div.crm__data
+            div.crm__title Hello Evano 👋🏼,
+            div.crm__table
+                div.crm__search
+                    div
+                        div.crm__search-info All Customers
+                        div.crm__search-active Active Members
+                    label
+                        input(type='text' name='q' placeholder='Search')
+                div.crm__table-wrap
+                    table
+                        tr
+                            th Customer Name
+                            th Company
+                            th Phone Number
+                            th Email
+                            th Country
+                            th.status
+                                span Active
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status
+                                span Active
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span Active
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span.disabled Inactive
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span Active
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span.disabled Inactive
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span Active
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span.disabled Inactive
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.status 
+                                span.disabled Inactive
+                div.crm__pagination
+                    div.crm__pagination-total Showing data 1 to 8 of  256K entries
+                    div.crm__pagination-pages
+                        div.crm__pagination-arrow
+                        div.crm__pagination-page.active 1
+                        div.crm__pagination-page 2
+                        div.crm__pagination-page 3
+                        div.crm__pagination-page 4
+                        div.crm__pagination-dots ...
+                        div.crm__pagination-page 40
+                        div.crm__pagination-arrow.right

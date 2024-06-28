@@ -64,3 +64,14 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  &.fixer {
+    overflow: hidden;
+  }
+}
